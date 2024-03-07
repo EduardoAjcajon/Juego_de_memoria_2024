@@ -1,33 +1,33 @@
-// progra pa activar
+// Programa para activar las cartas al hacer clic en ellas
 let todas_las_cartas = document.querySelectorAll(".carta_tracera");
+
+// foreach sobre todas las cartas
 todas_las_cartas.forEach((cada_div) => {
 
-    /* funcion al realizar click */
+    /* Función al realizar clic en una carta */
     cada_div.addEventListener("click", () => {
         
-        /* cantidad de cartas descubiertas */
+        /* Contar la cantidad de cartas descubiertas */
         let cartas_descubiertas = document.querySelectorAll(".activar");
         let total_descubiertas = cartas_descubiertas.length;
         
-        if (total_descubiertas < 2){
-            cada_div.classList.add("activar")
+        // Si hay menos de 2 cartas descubiertas, se activa la carta clicada
+        if (total_descubiertas < 2) {
+            cada_div.classList.add("activar");
             cartas_descubiertas = document.querySelectorAll(".activar");
             
-            if (total_descubiertas ==1){
-                /* condicionas para que espere un segundo */
+            // Si hay una carta descubierta, se desactivan después de 1 segundo
+            if (total_descubiertas == 1) {
+                // Se utiliza setTimeout para esperar un segundo antes de desactivar las cartas
                 setTimeout(() => {
-
                     cartas_descubiertas.forEach((cada_carta_descubierta) => {
-                        cada_carta_descubierta.classList.remove("activar")
-                    })
+                        cada_carta_descubierta.classList.remove("activar");
+                    });
                 }, 1000);    
             }
-        }else{
-            /* te dice si tienes 2 cartas descubiertas */
-            console.log("Dos cartas descubiertas")
-            
-            
+        } else {
+            /* Imprimir mensaje si ya hay 2 cartas descubiertas */
+            console.log("Dos cartas descubiertas");
         }
     });
 });
-
