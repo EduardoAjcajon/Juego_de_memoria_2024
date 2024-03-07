@@ -25,11 +25,3 @@ function repartir_cartas (){
 
 repartir_cartas();
 
-// progra pa activar
-
-let todas_las_cartas = document.querySelectorAll(".carta_tracera");
-todas_las_cartas.forEach((cada_div) => {
-    cada_div.addEventListener("click", () => {
-        cada_div.classList.add("activar")
-    })
-})

@@ -1,6 +1,7 @@
 #root {
     width: 50rem;
     height: 30rem;
+    background-color: black;
     border: 1px solid black;
     border-radius: 5px;
 
@@ -15,7 +16,7 @@
 }
 .carta_tracera{
     position: relative;
-    background-color: rgb(125, 88, 21);
+    background-color: rgb(255, 166, 0);
     border-radius: 5px;
     
     backface-visibility: hidden;
@@ -29,7 +30,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: orange;
+    background-color: rgb(159, 154, 154);
     border-radius: 5px;
     font-size: 4rem;
 
