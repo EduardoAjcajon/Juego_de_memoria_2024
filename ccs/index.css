@@ -1,4 +1,4 @@
-#root {
+.tablero {
     width: 50rem;
     height: 30rem;
     background-color: black;
@@ -6,7 +6,7 @@
     border-radius: 5px;
 
     margin: auto;
-    margin-top: 15rem;
+    margin-top: 10rem;
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-width : 725px) {
-    #root {
+    .tablero {
         width: 36rem;
         height: 90rem;
         border: 1px solid black;
