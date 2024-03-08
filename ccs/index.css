@@ -48,6 +48,9 @@
     transform: rotateY(-180deg);
 
 }
+.ocultar{
+    transform: rotateY( 90deg);
+}
 
 @media screen and (max-width : 725px) {
     .tablero {
