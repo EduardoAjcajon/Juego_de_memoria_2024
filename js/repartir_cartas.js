@@ -1,7 +1,7 @@
-import { cards1, cards2 } from "./Data_cartas.js";
+import { lista_aleatoria } from "./Data_cartas.js";
 
 // Concatenar ambas listas de cartas
-let todas_las_tarjetas = cards1.concat(cards2);
+let todas_las_tarjetas = lista_aleatoria;
 
 // Función para repartir las cartas en el tablero HTML
 function repartir_cartas() {

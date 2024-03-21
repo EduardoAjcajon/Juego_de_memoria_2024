@@ -1,8 +1,17 @@
+.centro{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.lista{
+    font-size: 1.8rem;
+    margin-left: 9rem;
+}
 .tablero {
     width: 50rem;
     height: 30rem;
-    background-color: black;
-    border: 1px solid black;
     border-radius: 5px;
 
     margin: auto;
@@ -13,6 +22,9 @@
     grid-template-rows: repeat(4, 1fr);
     padding: 0.5rem;
     gap: 1rem;
+
+    grid-column-start: 3;
+    grid-column-end: 7;
 }
 .carta_tracera{
     position: relative;
@@ -45,11 +57,12 @@
     backface-visibility: hidden;
 }
 .activar{
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
 
 }
 .ocultar{
-    transform: rotateY( 90deg);
+    transform: rotatey(90deg);
+
 }
 
 @media screen and (max-width : 725px) {
