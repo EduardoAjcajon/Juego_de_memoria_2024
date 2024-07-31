@@ -1,0 +1,160 @@
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    #root {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        perspective: 1000px; 
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem; 
+        padding: 0.5rem; 
+    }
+
+    .nivel {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nivel .num-nivel {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: orange;
+        color: white;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem; 
+    }
+
+    .vidas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-top: 0.5rem; 
+        font-size: 1.5rem; 
+    }
+
+    .vidas .corazones {
+        width: 1.5rem; 
+    }
+
+    .tiempo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .tiempo .ico_time {
+        padding-top: 0.2em;
+    }
+
+    .tablero {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 5px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 4px; 
+    }
+
+    .carta_trasera {
+        position: relative;
+        background-color: orange;
+        border-radius: 5px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+
+    .carta_frontal {
+        width: 100%; 
+        height: 100%; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg); 
+        background-color: rgb(219, 142, 18);
+        border-radius: 5px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        backface-visibility: hidden;
+    }
+
+    .carta_trasera.active, .carta_frontal.active {
+        transform: rotateY(0deg);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: auto;
+    }
+
+    .modal-content {
+        background-color: #fdfdfd;
+        margin: 15% auto; 
+        padding: 15px; 
+        border: 2px solid lightgreen;
+        width: 60%; 
+        max-width: 400px; 
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .close {
+        color: #ff6600;
+        font-size: 24px; /* Ajustado el tamaño de fuente */
+        font-weight: bold;
+        position: absolute;
+        top: 5px; /* Ajustado la posición */
+        right: 10px; /* Ajustado la posición */
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #cc3300;
+    }
+
+    .modal-content p {
+        font-size: 0.8rem; /* Ajustado el tamaño de fuente */
+        color: #333;
+        margin: 0;
+        padding: 5px; /* Ajustado el padding */
+    }
+}
