@@ -1,12 +1,10 @@
-// DataCarta.js
-
 // Datos de cartas por nivel
-let cartasNivel0 = ["🏎️", "🚗"]; // 2 cartas (1 par)
-let cartasNivel1 = ["🏎️", "🚗", "🏍️", "✈️"]; // 4 cartas (2 pares)
-let cartasNivel2 = ["🏎️", "🚘", "🚒", "🚗", "🏍️", "✈️"]; // 6 cartas (3 pares)
-let cartasNivel3 = ["🏎️", "🚘", "🚒", "🚗", "🏍️", "✈️", "🛺", "🛴"]; // 8 cartas (4 pares)
-let cartasNivel4 = ["🏎️", "🚘", "🚒", "🚗", "🏍️", "✈️", "🛺", "🛴", "🍀", "🐭",]; // 12 cartas (6 pares)
-let cartasNivel5 = ["🏎️", "🚘", "🚒", "🚗", "🏍️", "✈️", "🛺", "🛴", "🍀", "🐭", "🚍"]; // 14 cartas (7 pares)
+let cartasNivel0 = ["🚀","🛰️"]; 
+let cartasNivel1 = ["🚀","🛰️","👽","🛸"]; 
+let cartasNivel2 = ["🚀","🛰️","👽","🛸","🪂","🌌"]; 
+let cartasNivel3 = ["🚀","🛰️","👽","🛸","🪂","🌌","⭐","🌑"]; 
+let cartasNivel4 = ["🚀","🛰️","👽","🛸","🪂","🌌","⭐","🌑","🔭","👩‍🚀"];
+let cartasNivel5 = ["🚀","🛰️","👽","🛸","🪂","🌌","⭐","🌑","🔭","👩‍🚀","☄️","👾"]; 
 
 // Lista de cartas por nivel
 let lista_cartas_nivel = [
@@ -18,8 +16,8 @@ let lista_cartas_nivel = [
     cartasNivel5
 ];
 
-export let cards1 = ["🏎️", "🚗"];
-export let cards2 = ["🏎️", "🚗"];
+export let cards1 = ["🚀","🛰️"];
+export let cards2 = ["🚀","🛰️"];
 
 // Función para crear aleatoriedad
 function ordenarAleatorio(a, b) {
